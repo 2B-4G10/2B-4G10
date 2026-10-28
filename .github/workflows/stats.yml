@@ -1,0 +1,56 @@
+name: Profile stats
+
+# Refreshes the download badge and the language and overview cards in the README. They live on the
+# stats branch, which holds a single commit that is replaced each time, and only when something changed.
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main]
+    paths: [scripts/stats.py, .github/workflows/stats.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      USER_LOGIN: ${{ github.repository_owner }}
+      # The Xposed Modules Repo mirror is where most Re: TeleVIP installs come from.
+      EXTRA_REPOS: Xposed-Modules-Repo/io.github.re_televip.televip
+      # Upstream code in forks doesn't count towards my languages: YouPlus is someone else's tweak,
+      # and MVT GUI's Python is Amnesty's MVT itself.
+      SKIP_LANGS: YouPlus, MVT-GUI:Python
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Build the cards
+        run: python3 scripts/stats.py stats
+
+      - name: Publish to the stats branch
+        working-directory: stats
+        run: |
+          changed=no
+          for f in *; do
+            current=$(gh api "repos/$GITHUB_REPOSITORY/contents/$f?ref=stats" --jq .content 2>/dev/null \
+                | base64 -d 2>/dev/null || true)
+            [ "$current" = "$(cat "$f")" ] || changed=yes
+          done
+          if [ "$changed" = no ]; then
+            echo "Unchanged."
+            exit 0
+          fi
+          git init -q -b stats
+          git config user.name "github-actions[bot]"
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit -qm "Update the profile stats"
+          git push -qf "https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.git" HEAD:stats
