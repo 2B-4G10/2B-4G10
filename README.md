@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering">
+<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Inventive Modules, Privacy Tools and Reverse Engineering">
 
 [![Total downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2F2B-4G10%2F2B-4G10%2Fstats%2Fdownloads.json&label=total%20downloads&logo=github&style=for-the-badge)](#-projects)
 [![Followers](https://img.shields.io/github/followers/2B-4G10?label=followers&logo=github&color=FFD500&style=for-the-badge)](https://github.com/2B-4G10?tab=followers)
