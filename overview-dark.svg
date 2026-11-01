@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="200" viewBox="0 0 420 200" role="img" aria-label="At a glance">
+<title>At a glance</title>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}</style>
+<rect x="0.5" y="0.5" width="419" height="199" rx="10" fill="#0d1117" stroke="#30363d"/>
+<text x="24" y="38" font-size="17" font-weight="600" fill="#2AABEE">At a glance</text>
+<text x="24" y="80" font-size="14" fill="#e6edf3">⬇️  Total downloads</text>
+<text x="396" y="80" font-size="14" font-weight="600" text-anchor="end" fill="#e6edf3">32,968</text>
+<text x="24" y="110" font-size="14" fill="#e6edf3">⭐  Stars earned</text>
+<text x="396" y="110" font-size="14" font-weight="600" text-anchor="end" fill="#e6edf3">153</text>
+<text x="24" y="140" font-size="14" fill="#e6edf3">📦  Public projects</text>
+<text x="396" y="140" font-size="14" font-weight="600" text-anchor="end" fill="#e6edf3">5</text>
+<text x="24" y="170" font-size="14" fill="#e6edf3">👥  Followers</text>
+<text x="396" y="170" font-size="14" font-weight="600" text-anchor="end" fill="#e6edf3">10</text>
+</svg>
