@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering">
+<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering. Dream1Works logo, with Re: TeleVIP, NoLockQS and MVT GUI">
 
 <br>
 
