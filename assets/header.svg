@@ -1,39 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="Faisal AlDossary: Android modules, privacy tools and reverse engineering">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering">
   <title>Faisal AlDossary</title>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; }
+    .pulse.d1 { animation-delay: .4s; } .pulse.d2 { animation-delay: .8s; }
+    .pulse.d3 { animation-delay: 1.2s; } .pulse.d4 { animation-delay: 1.6s; }
+    .twinkle { animation: twinkle 4s ease-in-out infinite; transform-origin: 1043px 92px; }
+    .flow { stroke-dasharray: 6 18; animation: flow 2.4s linear infinite; }
+    .glow { animation: glow 6s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes twinkle { 0%, 100% { transform: scale(1) rotate(0deg); opacity: .95; } 50% { transform: scale(1.18) rotate(12deg); opacity: 1; } }
+    @keyframes flow { to { stroke-dashoffset: -48; } }
+    @keyframes glow { 0%, 100% { opacity: .55; } 50% { opacity: .9; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B3D63"/>
-      <stop offset="0.55" stop-color="#1A7FC1"/>
-      <stop offset="1" stop-color="#2AABEE"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B14"/>
+      <stop offset=".55" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E1B4B"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFD500"/>
-      <stop offset="1" stop-color="#F99B1C"/>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
     </linearGradient>
-    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.4" fill="#FFFFFF" fill-opacity="0.10"/>
+    <linearGradient id="neonH" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5D78E"/>
+      <stop offset="1" stop-color="#B8893B"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#94A3B8" fill-opacity=".14"/>
     </pattern>
-    <clipPath id="frame"><rect width="1200" height="260" rx="18"/></clipPath>
+    <clipPath id="frame"><rect width="1200" height="320" rx="22"/></clipPath>
   </defs>
+
   <g clip-path="url(#frame)">
-    <rect width="1200" height="260" fill="url(#sky)"/>
-    <rect width="1200" height="260" fill="url(#dots)"/>
-    <circle cx="1080" cy="40" r="170" fill="#FFFFFF" fill-opacity="0.06"/>
-    <circle cx="1130" cy="230" r="110" fill="#FFFFFF" fill-opacity="0.05"/>
-    <!-- A paper plane, for Telegram -->
-    <g transform="translate(905 58) scale(1.75)" opacity="0.95">
-      <path d="M80,30 L69,78 L51,66 L42,76 L35,57 L25,48 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
-      <path d="M25,48 L80,30 L35,57 Z" fill="#565A63"/>
-      <path d="M35,57 L80,30 L42,76 Z" fill="#F99B1C"/>
-      <path d="M80,30 L69,78 L51,66 L42,76 Z" fill="#4A4D54"/>
-      <path d="M80,30 L69,78 L51,66 L42,76 L35,57 L25,48 Z" fill="none" stroke="#231F20" stroke-width="3" stroke-linejoin="round"/>
-      <path d="M80,30 L35,57 M80,30 L42,76" fill="none" stroke="#231F20" stroke-width="3" stroke-linecap="round"/>
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <circle class="glow" cx="120" cy="40" r="260" fill="url(#cyanGlow)"/>
+    <circle class="glow" cx="1000" cy="190" r="300" fill="url(#violetGlow)"/>
+
+    <!-- Faint network in the background -->
+    <g stroke="#38BDF8" stroke-opacity=".10" stroke-width="1.2" fill="none">
+      <path d="M620 40 L720 110 L690 230 L790 290 M720 110 L840 60 M690 230 L560 270"/>
+      <path d="M1140 40 L1180 150 L1120 290"/>
     </g>
-  </g>
-  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-    <text x="72" y="104" font-size="22" font-weight="500" fill="#FFFFFF" fill-opacity="0.85">Hi there, I'm</text>
-    <text x="72" y="158" font-size="54" font-weight="800" fill="#FFFFFF">Faisal AlDossary</text>
-    <rect x="72" y="176" width="96" height="5" rx="2.5" fill="url(#gold)"/>
-    <text x="72" y="216" font-size="21" fill="#FFFFFF" fill-opacity="0.92">Android modules · Privacy tools · Reverse engineering</text>
+    <g fill="#38BDF8" fill-opacity=".22">
+      <circle cx="620" cy="40" r="3"/><circle cx="720" cy="110" r="3"/><circle cx="690" cy="230" r="3"/>
+      <circle cx="790" cy="290" r="3"/><circle cx="840" cy="60" r="3"/><circle cx="560" cy="270" r="3"/>
+      <circle cx="1140" cy="40" r="3"/><circle cx="1180" cy="150" r="3"/><circle cx="1120" cy="290" r="3"/>
+    </g>
+
+    <!-- The Neural V mark -->
+    <g transform="translate(860 40)">
+      <circle cx="140" cy="125" r="122" fill="#0B1120" fill-opacity=".55" stroke="#1F2937" stroke-width="2"/>
+      <circle cx="140" cy="125" r="122" fill="none" stroke="url(#neon)" stroke-width="2.5" stroke-dasharray="5 11" opacity=".7"/>
+      <g fill="none" stroke="url(#neon)" stroke-linecap="round">
+        <path d="M74 66 L140 194 L206 66" stroke-width="9"/>
+        <path d="M107 130 H173 M74 66 L173 130 M206 66 L107 130" stroke-width="2.2" opacity=".45"/>
+        <path class="flow" d="M74 66 L140 194 L206 66" stroke="#E0F2FE" stroke-width="2.4" opacity=".85"/>
+      </g>
+      <g fill="#0A0E17" stroke="url(#neon)" stroke-width="3.5">
+        <circle class="pulse" cx="74" cy="66" r="7.5"/>
+        <circle class="pulse d1" cx="107" cy="130" r="7.5"/>
+        <circle class="pulse d2" cx="140" cy="194" r="7.5"/>
+        <circle class="pulse d3" cx="173" cy="130" r="7.5"/>
+        <circle class="pulse d4" cx="206" cy="66" r="7.5"/>
+      </g>
+    </g>
+    <path class="twinkle" d="M1043 62 C1046 82 1053 89 1073 92 C1053 95 1046 102 1043 122 C1040 102 1033 95 1013 92 C1033 89 1040 82 1043 62 Z" fill="url(#gold)"/>
+
+    <!-- Words -->
+    <text x="72" y="98" font-size="24" font-weight="500" fill="#A5F3FC">Hi there, I'm</text>
+    <text x="70" y="162" font-size="62" font-weight="800" fill="#F8FAFC" letter-spacing="-.5">Faisal AlDossary</text>
+    <rect x="72" y="182" width="150" height="5" rx="2.5" fill="url(#neonH)"/>
+    <circle cx="236" cy="184.5" r="4" fill="#F5D78E"/>
+    <text x="72" y="228" font-size="26" fill="#CBD5E1">Android modules · Privacy tools · Reverse engineering</text>
+
+    <g font-size="17" font-weight="600">
+      <rect x="72" y="252" width="262" height="36" rx="18" fill="#22D3EE" fill-opacity=".12" stroke="#22D3EE" stroke-opacity=".45"/>
+      <text x="203" y="276" text-anchor="middle" fill="#A5F3FC">Xposed · Vector · LSPatch</text>
+      <rect x="346" y="252" width="150" height="36" rx="18" fill="#8B5CF6" fill-opacity=".14" stroke="#8B5CF6" stroke-opacity=".5"/>
+      <text x="421" y="276" text-anchor="middle" fill="#DDD6FE">Privacy first</text>
+      <rect x="508" y="252" width="150" height="36" rx="18" fill="#F5D78E" fill-opacity=".10" stroke="#F5D78E" stroke-opacity=".45"/>
+      <text x="583" y="276" text-anchor="middle" fill="#FDE68A">Saudi Arabia</text>
+    </g>
   </g>
 </svg>
