@@ -30,9 +30,8 @@ jobs:
       # stars and the project itself count.
       OWN_REPOS: Dream1Works/Re-TeleVIP
       # Code I didn't write doesn't count towards my languages: YouPlus and LSPatch are forks of
-      # other people's projects, MVT GUI's Python is Amnesty's MVT itself, and Xbloom Panel's C is
-      # generated font, emoji and logo data (its own code is the C++).
-      SKIP_LANGS: YouPlus, LSPatch, MVT-GUI:Python, Xbloom-Panel:C
+      # other people's projects, and MVT GUI's Python is Amnesty's MVT itself.
+      SKIP_LANGS: YouPlus, LSPatch, MVT-GUI:Python
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
