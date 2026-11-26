@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering. Dream1Works logo, with Re: TeleVIP, NoLockQS and MVT GUI">
+<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering">
 
 <br>
 
@@ -70,6 +70,19 @@
     <img src="https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white&style=flat-square" alt="Windows">
   </td>
 </tr>
+<tr>
+  <td width="104" align="center" valign="middle">
+    <a href="https://github.com/2B-4G10/Xbloom-Panel"><img src="assets/icons/xbloom-panel.png" width="80" height="80" alt="xBloom Panel"></a>
+  </td>
+  <td valign="middle">
+    <a href="https://github.com/2B-4G10/Xbloom-Panel"><b>xBloom Panel</b></a> <sub>by Double Shot</sub><br>
+    <sub>A touchscreen for the xBloom Studio coffee machine: recipes, brewing, grinder and scale at your fingertips, in English or العربية. Firmware for the Elecrow CrowPanel Advance 4.3″.</sub><br>
+    <a href="https://github.com/2B-4G10/Xbloom-Panel/releases/latest"><img src="https://img.shields.io/github/v/release/2B-4G10/Xbloom-Panel?label=release&color=C8A27E&style=flat-square" alt="Latest release"></a>
+    <a href="https://github.com/2B-4G10/Xbloom-Panel/releases"><img src="https://img.shields.io/github/downloads/2B-4G10/Xbloom-Panel/total?color=34C759&style=flat-square" alt="Downloads"></a>
+    <img src="https://img.shields.io/badge/ESP32-E7352C?logo=espressif&logoColor=white&style=flat-square" alt="ESP32">
+    <img src="https://img.shields.io/badge/Bluetooth-0082FC?logo=bluetooth&logoColor=white&style=flat-square" alt="Bluetooth">
+  </td>
+</tr>
 </table>
 
 <img src="assets/divider.svg" width="100%" height="12" alt="">
@@ -102,12 +115,14 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 
-**Android** &nbsp;
+**Android & devices** &nbsp;
 ![Android](https://img.shields.io/badge/Android-34A853?style=flat-square&logo=android&logoColor=white)
 ![Xposed](https://img.shields.io/badge/Xposed-Vector%20·%20LSPatch-0F172A?style=flat-square&logo=android&logoColor=22D3EE)
 ![Magisk](https://img.shields.io/badge/Magisk-00AF9C?style=flat-square&logo=magisk&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 
 **Ship & run** &nbsp;
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
