@@ -1,13 +1,13 @@
 name: Profile stats
 
-# Refreshes the download badge and the language and overview cards in the README. They live on the
+# Refreshes the badges and the language and overview cards in the README. They live on the
 # stats branch, which holds a single commit that is replaced each time, and only when something changed.
 on:
   schedule:
     - cron: '23 */6 * * *'
   push:
     branches: [main]
-    paths: [scripts/stats.py, .github/workflows/stats.yml]
+    paths: [scripts/stats.py, badges.json, .github/workflows/stats.yml]
   workflow_dispatch:
 
 permissions:
