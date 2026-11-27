@@ -1,6 +1,7 @@
 <div align="center">
 
-<a href="#-projects"><img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering"></a>
+<!-- The banner is cut into linked slices so each app icon opens its own page. -->
+<a href="https://github.com/Dream1Works"><img src="assets/banner/top.svg" width="100%" align="top" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/left.svg" width="72.9167%" align="top" alt=""></a><a href="https://github.com/Dream1Works/Re-TeleVIP"><img src="assets/banner/icon-re-televip.svg" width="5.3333%" align="top" alt="Re: TeleVIP"></a><a href="https://github.com/2B-4G10/NoLockQS"><img src="assets/banner/icon-nolockqs.svg" width="5.3333%" align="top" alt="NoLockQS"></a><a href="https://github.com/2B-4G10/MVT-GUI"><img src="assets/banner/icon-mvt-gui.svg" width="5.3333%" align="top" alt="MVT GUI"></a><a href="https://fmhub.org"><img src="assets/banner/icon-fmhub.svg" width="5.3333%" align="top" alt="FMhub"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/right.svg" width="5.75%" align="top" alt=""></a>
 
 <br>
 
