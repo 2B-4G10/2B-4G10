@@ -72,15 +72,15 @@
 </tr>
 <tr>
   <td width="104" align="center" valign="middle">
-    <a href="https://github.com/2B-4G10/Xbloom-Panel"><img src="assets/icons/xbloom-panel.png" width="80" height="80" alt="xBloom Panel"></a>
+    <a href="https://fmhub.org"><img src="assets/icons/fmhub.png" width="80" height="80" alt="FMhub"></a>
   </td>
   <td valign="middle">
-    <a href="https://github.com/2B-4G10/Xbloom-Panel"><b>xBloom Panel</b></a> <sub>by Double Shot</sub><br>
-    <sub>A touchscreen for the xBloom Studio coffee machine: recipes, brewing, grinder and scale at your fingertips, in English or العربية. Firmware for the Elecrow CrowPanel Advance 4.3″.</sub><br>
-    <a href="https://github.com/2B-4G10/Xbloom-Panel/releases/latest"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-latest-release.svg" alt="Latest release"></a>
-    <a href="https://github.com/2B-4G10/Xbloom-Panel/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-downloads.svg" alt="Downloads"></a>
-    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-esp32.svg" alt="ESP32">
-    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-bluetooth.svg" alt="Bluetooth">
+    <a href="https://fmhub.org"><b>FMhub</b></a> <sub>Family Medicine Hub</sub><br>
+    <sub>The hub for family medicine residents and trainers in Saudi Arabia: the JHAH residency program, the Family Medicine: The Essentials e-book, Deep Dive conferences and a community forum. In English and العربية · <a href="https://fmhub.org">fmhub.org</a></sub><br>
+    <a href="https://fmhub.org"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-website.svg" alt="fmhub.org status"></a>
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-audience.svg" alt="Family medicine residents and trainers">
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-wordpress.svg" alt="WordPress">
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-pwa.svg" alt="Installable web app">
   </td>
 </tr>
 </table>
@@ -127,6 +127,7 @@
 **Ship & run** &nbsp;
 ![GitHub Actions](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-github-actions.svg)
 ![Cloudflare](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-cloudflare.svg)
+![WordPress](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-wordpress.svg)
 ![macOS](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-macos.svg)
 
 </div>
