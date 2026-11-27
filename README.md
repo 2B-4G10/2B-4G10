@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering">
+<a href="#-projects"><img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering"></a>
 
 <br>
 
@@ -40,7 +40,7 @@
     <a href="https://github.com/Dream1Works/Re-TeleVIP/releases/latest"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-latest-release.svg" alt="Latest release"></a>
     <a href="https://github.com/Dream1Works/Re-TeleVIP/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-downloads.svg" alt="Downloads"></a>
     <a href="https://re-televip.cc"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-users-2.svg" alt="Users"></a>
-    <a href="https://github.com/Dream1Works/Re-TeleVIP/stargazers"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-stars.svg" alt="Stars"></a>
+    <a href="https://github.com/Dream1Works/Re-TeleVIP"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-stars.svg" alt="Stars"></a>
     <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-android.svg" alt="Android">
   </td>
 </tr>
@@ -53,7 +53,7 @@
     <sub>Keeps Quick Settings and the power menu locked on the lock screen of rooted Pixel phones.</sub><br>
     <a href="https://github.com/2B-4G10/NoLockQS/releases/latest"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-latest-release.svg" alt="Latest release"></a>
     <a href="https://github.com/2B-4G10/NoLockQS/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-downloads.svg" alt="Downloads"></a>
-    <a href="https://github.com/2B-4G10/NoLockQS/stargazers"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-stars.svg" alt="Stars"></a>
+    <a href="https://github.com/2B-4G10/NoLockQS"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-stars.svg" alt="Stars"></a>
     <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-rooted-pixel.svg" alt="Rooted Pixel">
   </td>
 </tr>
