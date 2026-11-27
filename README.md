@@ -7,7 +7,7 @@
 
 [![Total downloads](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-total-downloads.svg)](#-projects)
 [![Re: TeleVIP users](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-users.svg)](https://re-televip.cc)
-[![Followers](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-followers.svg)](https://github.com/2B-4G10?tab=followers)
+[![Total stars](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-total-stars.svg)](https://github.com/2B-4G10?tab=repositories&sort=stargazers)
 
 [![Website](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-website.svg)](https://re-televip.cc)
 [![Telegram](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telegram.svg)](https://t.me/Revived_TeleVIP)
