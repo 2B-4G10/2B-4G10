@@ -8,6 +8,8 @@ Writes to the folder given as the first argument:
 Settings come from the environment:
   USER_LOGIN    whose profile this is
   EXTRA_REPOS   other repos whose release downloads count too (comma-separated owner/name)
+  OWN_REPOS     my projects that live under another account, such as an organisation; their
+                downloads, stars and the project itself count as mine (comma-separated owner/name)
   SKIP_LANGS    what the language card leaves out, such as upstream code in forks (comma-separated
                 repo names, or repo:Language to drop one language of a repo)
   GH_TOKEN      a token for the API (the workflow's own token is enough)
@@ -23,6 +25,7 @@ from pathlib import Path
 API = "https://api.github.com"
 USER = os.environ.get("USER_LOGIN", "2B-4G10")
 EXTRA_REPOS = [r.strip() for r in os.environ.get("EXTRA_REPOS", "").split(",") if r.strip()]
+OWN_REPOS = [r.strip() for r in os.environ.get("OWN_REPOS", "").split(",") if r.strip()]
 SKIP_LANGS = {r.strip().lower() for r in os.environ.get("SKIP_LANGS", "").split(",") if r.strip()}
 TOKEN = os.environ.get("GH_TOKEN", "")
 
@@ -38,11 +41,12 @@ COLOURS = {
     "Inno Setup": "#264b99", "Nix": "#7e7eff", "Lua": "#000080",
 }
 
+# The cards follow the header's Neural V colours: a cyan-to-violet title and a gold accent.
 THEMES = {
-    "dark": {"bg": "#0d1117", "border": "#30363d", "title": "#2AABEE", "text": "#e6edf3",
-             "muted": "#8b949e", "track": "#21262d"},
-    "light": {"bg": "#ffffff", "border": "#d0d7de", "title": "#1d8fcf", "text": "#1f2328",
-              "muted": "#59636e", "track": "#eaeef2"},
+    "dark": {"bg": "#0d1117", "bg2": "#161b2e", "border": "#30363d", "from": "#22D3EE", "to": "#A78BFA",
+             "text": "#e6edf3", "muted": "#8b949e", "track": "#21262d", "gold": "#F5D78E"},
+    "light": {"bg": "#ffffff", "bg2": "#f5f3ff", "border": "#d0d7de", "from": "#0891B2", "to": "#7C3AED",
+              "text": "#1f2328", "muted": "#59636e", "track": "#eaeef2", "gold": "#B8893B"},
 }
 
 # Both cards share one size so they sit side by side in the README.
@@ -92,9 +96,15 @@ def card(theme, width, height, title, body):
         f'viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title)}">\n'
         f'<title>{escape(title)}</title>\n'
         f'<style>text{{font-family:{FONT}}}</style>\n'
-        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="10" '
-        f'fill="{t["bg"]}" stroke="{t["border"]}"/>\n'
-        f'<text x="24" y="38" font-size="17" font-weight="600" fill="{t["title"]}">{escape(title)}</text>\n'
+        f'<defs><linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1">'
+        f'<stop offset="0" stop-color="{t["bg"]}"/><stop offset="1" stop-color="{t["bg2"]}"/></linearGradient>'
+        f'<linearGradient id="ttl" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="{t["from"]}"/><stop offset="1" stop-color="{t["to"]}"/></linearGradient></defs>\n'
+        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="12" '
+        f'fill="url(#bgg)" stroke="{t["border"]}"/>\n'
+        f'<text x="24" y="38" font-size="17" font-weight="700" fill="url(#ttl)">{escape(title)}</text>\n'
+        f'<rect x="24" y="46" width="36" height="3" rx="1.5" fill="url(#ttl)"/>'
+        f'<circle cx="66" cy="47.5" r="2" fill="{t["gold"]}"/>\n'
         f'{body}</svg>\n'
     )
 
@@ -111,20 +121,20 @@ def languages_svg(theme, langs):
 
     # One rounded bar split into each language's share.
     bar, x, bar_w = [], 24.0, width - 48
-    bar.append(f'<clipPath id="bar"><rect x="24" y="56" width="{bar_w}" height="10" rx="5"/></clipPath>')
-    bar.append(f'<rect x="24" y="56" width="{bar_w}" height="10" rx="5" fill="{t["track"]}"/>')
+    bar.append(f'<clipPath id="bar"><rect x="24" y="64" width="{bar_w}" height="10" rx="5"/></clipPath>')
+    bar.append(f'<rect x="24" y="64" width="{bar_w}" height="10" rx="5" fill="{t["track"]}"/>')
     bar.append('<g clip-path="url(#bar)">')
     for lang, v in shown:
         w = bar_w * v / total
         fill = t["muted"] if lang == "Other" else colour(lang)
-        bar.append(f'<rect x="{x:.2f}" y="56" width="{w + 0.5:.2f}" height="10" fill="{fill}"/>')
+        bar.append(f'<rect x="{x:.2f}" y="64" width="{w + 0.5:.2f}" height="10" fill="{fill}"/>')
         x += w
     bar.append("</g>")
 
     legend = []
     for i, (lang, v) in enumerate(shown):
         lx = 24 + (i % 2) * 196
-        ly = 100 + (i // 2) * 28
+        ly = 108 + (i // 2) * 28
         fill = t["muted"] if lang == "Other" else colour(lang)
         pct = f"{100 * v / total:.1f}%"
         legend.append(f'<circle cx="{lx + 6}" cy="{ly - 5}" r="6" fill="{fill}"/>')
@@ -138,7 +148,7 @@ def overview_svg(theme, facts):
     width, height = WIDTH, HEIGHT
     body = []
     for i, (icon, label, value) in enumerate(facts):
-        y = 80 + i * 30
+        y = 86 + i * 30
         body.append(f'<text x="24" y="{y}" font-size="14" fill="{t["text"]}">{icon}  {escape(label)}</text>')
         body.append(f'<text x="{width - 24}" y="{y}" font-size="14" font-weight="600" text-anchor="end" '
                     f'fill="{t["text"]}">{escape(value)}</text>')
@@ -153,8 +163,12 @@ def main():
     repos = [r for r in get(f"users/{USER}/repos?type=owner&per_page=100")
              if not r["private"] and not r["archived"]]
 
+    # Projects that moved to an organisation are still mine.
+    own = [get(f"repos/{name}") for name in OWN_REPOS]
+    own = [r for r in own if not r.get("private") and not r.get("archived")]
+
     downloads = 0
-    for name in [r["full_name"] for r in repos] + EXTRA_REPOS:
+    for name in [r["full_name"] for r in repos + own] + EXTRA_REPOS:
         n = sum(a["download_count"] for rel in get(f"repos/{name}/releases?per_page=100")
                 for a in rel["assets"])
         print(f"{name}: {n} downloads")
@@ -170,17 +184,17 @@ def main():
                 langs[lang] = langs.get(lang, 0) + size
     print("languages:", langs)
 
-    stars = sum(r["stargazers_count"] for r in repos)
+    stars = sum(r["stargazers_count"] for r in repos + own)
     facts = [
         ("⬇️", "Total downloads", f"{downloads:,}"),
         ("⭐", "Stars earned", f"{stars:,}"),
-        ("📦", "Public projects", str(len(repos))),
+        ("📦", "Public projects", str(len(repos) + len(own))),
         ("👥", "Followers", f"{user['followers']:,}"),
     ]
 
     (out / "downloads.json").write_text(json.dumps({
         "schemaVersion": 1, "label": "downloads", "message": short(downloads),
-        "color": "2AABEE", "cacheSeconds": 3600,
+        "color": "22D3EE", "cacheSeconds": 3600,
     }, indent=2) + "\n")
     for theme in THEMES:
         (out / f"languages-{theme}.svg").write_text(languages_svg(theme, langs))
