@@ -1,9 +1,9 @@
 {
   "total-downloads": "https://img.shields.io/badge/total%20downloads-{downloads}-0E7490?logo=github&labelColor=0F172A&style=for-the-badge",
-  "re-televip-users": "https://img.shields.io/endpoint?url=https%3A%2F%2Fre-televip.cc%2Fbadge%2Fusers&label=Re%3A%20TeleVIP%20users&logo=telegram&logoColor=white&labelColor=0F172A&style=for-the-badge",
+  "re-televip-users": "https://img.shields.io/endpoint?url=https%3A%2F%2Fre-televip.cc%2Fbadge%2Fusers&label=Re%3A%20TeleVIP%20users&logo=telegram&logoColor=white&labelColor=0F172A&style=for-the-badge&color=0369A1",
   "total-stars": "https://img.shields.io/badge/total%20stars-{stars}-7C3AED?logo=github&labelColor=0F172A&style=for-the-badge",
   "website": "https://img.shields.io/badge/re--televip.cc-website-0E7490?logo=googlechrome&logoColor=white&labelColor=0F172A&style=flat-square",
-  "telegram": "https://img.shields.io/badge/Telegram-channel-2AABEE?logo=telegram&logoColor=white&labelColor=0F172A&style=flat-square",
+  "telegram": "https://img.shields.io/badge/Telegram-channel-0369A1?logo=telegram&logoColor=white&labelColor=0F172A&style=flat-square",
   "patreon": "https://img.shields.io/badge/Patreon-support-FF424D?logo=patreon&logoColor=white&labelColor=0F172A&style=flat-square",
   "x": "https://img.shields.io/badge/@2B__4G10-follow-334155?logo=x&logoColor=white&labelColor=0F172A&style=flat-square",
   "dream1works": "https://img.shields.io/badge/Dream1Works-organisation-6D28D9?logo=github&logoColor=white&labelColor=0F172A&style=flat-square",
