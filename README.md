@@ -12,7 +12,7 @@
 [![Website](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-website.svg)](https://re-televip.cc)
 [![Telegram](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telegram.svg)](https://t.me/Revived_TeleVIP)
 [![Patreon](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-patreon.svg)](https://www.patreon.com/Dossary)
-[![Ko-fi](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-ko-fi.svg)](https://ko-fi.com/2b4g10)
+[![Ko-fi](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-ko-fi.svg)](https://ko-fi.com/Q8G429G7HX)
 [![X](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-x.svg)](https://x.com/2B_4G10)
 [![Dream1Works](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-dream1works.svg)](https://github.com/Dream1Works)
 
@@ -143,7 +143,7 @@ My projects are free and made in squeezed-in time ☕ If they help you, a coffee
 <div align="center">
 
 [![Support on Patreon](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-support-on-patreon.svg)](https://www.patreon.com/Dossary/membership)
-[![Support on Ko-fi](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-support-on-ko-fi.svg)](https://ko-fi.com/2b4g10)
+[![Support me on Ko-fi](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-support-on-ko-fi.svg)](https://ko-fi.com/Q8G429G7HX)
 [![Join the Telegram channel](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-join-the-telegram-channel.svg)](https://t.me/Revived_TeleVIP)
 
 <br>
