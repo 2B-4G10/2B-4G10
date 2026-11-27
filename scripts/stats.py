@@ -89,7 +89,7 @@ def fetch(url):
 def badges(out, values):
     """Saves each badge in badges.json as badge-<name>.svg, keeping the last copy when one fails.
 
-    A badge URL may hold {downloads}, which is filled in with this run's total."""
+    A badge URL may hold {downloads} or {stars}, which are filled in with this run's totals."""
     specs = json.loads((Path(__file__).resolve().parent.parent / "badges.json").read_text())
     repo = os.environ.get("GITHUB_REPOSITORY", f"{USER}/{USER}")
     for name, url in specs.items():
@@ -228,7 +228,8 @@ def main():
         "schemaVersion": 1, "label": "downloads", "message": short(downloads),
         "color": "22D3EE", "cacheSeconds": 3600,
     }, indent=2) + "\n")
-    badges(out, {"downloads": urllib.parse.quote(short(downloads))})
+    badges(out, {"downloads": urllib.parse.quote(short(downloads)),
+                 "stars": urllib.parse.quote(short(stars))})
     for theme in THEMES:
         (out / f"languages-{theme}.svg").write_text(languages_svg(theme, langs))
         (out / f"overview-{theme}.svg").write_text(overview_svg(theme, facts))

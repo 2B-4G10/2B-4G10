@@ -1,12 +1,13 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering">
+<!-- The banner is cut into linked slices so each app icon opens its own page. -->
+<a href="https://github.com/Dream1Works"><img src="assets/banner/top.svg" width="100%" align="top" alt="Hi there, I'm Faisal AlDossary: Android modules, privacy tools and reverse engineering"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/left.svg" width="72.9167%" align="top" alt=""></a><a href="https://github.com/Dream1Works/Re-TeleVIP"><img src="assets/banner/icon-re-televip.svg" width="5.3333%" align="top" alt="Re: TeleVIP"></a><a href="https://github.com/2B-4G10/NoLockQS"><img src="assets/banner/icon-nolockqs.svg" width="5.3333%" align="top" alt="NoLockQS"></a><a href="https://github.com/2B-4G10/MVT-GUI"><img src="assets/banner/icon-mvt-gui.svg" width="5.3333%" align="top" alt="MVT GUI"></a><a href="https://fmhub.org"><img src="assets/banner/icon-fmhub.svg" width="5.3333%" align="top" alt="FMhub"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/right.svg" width="5.75%" align="top" alt=""></a>
 
 <br>
 
 [![Total downloads](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-total-downloads.svg)](#-projects)
 [![Re: TeleVIP users](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-users.svg)](https://re-televip.cc)
-[![Followers](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-followers.svg)](https://github.com/2B-4G10?tab=followers)
+[![Total stars](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-total-stars.svg)](https://github.com/2B-4G10?tab=repositories&sort=stargazers)
 
 [![Website](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-website.svg)](https://re-televip.cc)
 [![Telegram](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telegram.svg)](https://t.me/Revived_TeleVIP)
@@ -40,7 +41,7 @@
     <a href="https://github.com/Dream1Works/Re-TeleVIP/releases/latest"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-latest-release.svg" alt="Latest release"></a>
     <a href="https://github.com/Dream1Works/Re-TeleVIP/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-downloads.svg" alt="Downloads"></a>
     <a href="https://re-televip.cc"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-users-2.svg" alt="Users"></a>
-    <a href="https://github.com/Dream1Works/Re-TeleVIP/stargazers"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-stars.svg" alt="Stars"></a>
+    <a href="https://github.com/Dream1Works/Re-TeleVIP"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-stars.svg" alt="Stars"></a>
     <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-re-televip-android.svg" alt="Android">
   </td>
 </tr>
@@ -53,7 +54,7 @@
     <sub>Keeps Quick Settings and the power menu locked on the lock screen of rooted Pixel phones.</sub><br>
     <a href="https://github.com/2B-4G10/NoLockQS/releases/latest"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-latest-release.svg" alt="Latest release"></a>
     <a href="https://github.com/2B-4G10/NoLockQS/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-downloads.svg" alt="Downloads"></a>
-    <a href="https://github.com/2B-4G10/NoLockQS/stargazers"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-stars.svg" alt="Stars"></a>
+    <a href="https://github.com/2B-4G10/NoLockQS"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-stars.svg" alt="Stars"></a>
     <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-nolockqs-rooted-pixel.svg" alt="Rooted Pixel">
   </td>
 </tr>
@@ -72,15 +73,15 @@
 </tr>
 <tr>
   <td width="104" align="center" valign="middle">
-    <a href="https://github.com/2B-4G10/Xbloom-Panel"><img src="assets/icons/xbloom-panel.png" width="80" height="80" alt="xBloom Panel"></a>
+    <a href="https://fmhub.org"><img src="assets/icons/fmhub.png" width="80" height="80" alt="FMhub"></a>
   </td>
   <td valign="middle">
-    <a href="https://github.com/2B-4G10/Xbloom-Panel"><b>xBloom Panel</b></a> <sub>by Double Shot</sub><br>
-    <sub>A touchscreen for the xBloom Studio coffee machine: recipes, brewing, grinder and scale at your fingertips, in English or العربية. Firmware for the Elecrow CrowPanel Advance 4.3″.</sub><br>
-    <a href="https://github.com/2B-4G10/Xbloom-Panel/releases/latest"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-latest-release.svg" alt="Latest release"></a>
-    <a href="https://github.com/2B-4G10/Xbloom-Panel/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-downloads.svg" alt="Downloads"></a>
-    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-esp32.svg" alt="ESP32">
-    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-xbloom-panel-bluetooth.svg" alt="Bluetooth">
+    <a href="https://fmhub.org"><b>FMhub</b></a> <sub>Family Medicine Hub</sub><br>
+    <sub>The hub for family medicine residents and trainers in Saudi Arabia: the JHAH residency program, the Family Medicine: The Essentials e-book, Deep Dive conferences and a community forum. In English and العربية · <a href="https://fmhub.org">fmhub.org</a></sub><br>
+    <a href="https://fmhub.org"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-website.svg" alt="fmhub.org status"></a>
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-audience.svg" alt="Family medicine residents and trainers">
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-wordpress.svg" alt="WordPress">
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-fmhub-pwa.svg" alt="Installable web app">
   </td>
 </tr>
 </table>
@@ -127,6 +128,7 @@
 **Ship & run** &nbsp;
 ![GitHub Actions](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-github-actions.svg)
 ![Cloudflare](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-cloudflare.svg)
+![WordPress](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-wordpress.svg)
 ![macOS](https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-macos.svg)
 
 </div>
