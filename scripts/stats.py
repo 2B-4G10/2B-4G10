@@ -4,6 +4,10 @@ Writes to the folder given as the first argument:
   downloads.json            shields.io endpoint: release downloads across all public repos
   languages-{dark,light}.svg  top languages, by bytes of code in my public repos
   overview-{dark,light}.svg   downloads, stars, repos and followers at a glance
+  badge-<name>.svg          every badge in badges.json, drawn by shields.io here and served from
+                            this repo, so the profile never waits on shields.io (GitHub's image
+                            proxy often times out on it). A badge that can't be drawn now keeps
+                            its last copy from the stats branch.
 
 Settings come from the environment:
   USER_LOGIN    whose profile this is
@@ -18,6 +22,7 @@ Settings come from the environment:
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from html import escape
 from pathlib import Path
@@ -73,6 +78,33 @@ def get(path):
         items += data
         url = next((p.split(";")[0].strip()[1:-1] for p in link.split(",") if 'rel="next"' in p), None)
     return items
+
+
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": f"{USER}-profile-stats"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return resp.read()
+
+
+def badges(out, values):
+    """Saves each badge in badges.json as badge-<name>.svg, keeping the last copy when one fails.
+
+    A badge URL may hold {downloads}, which is filled in with this run's total."""
+    specs = json.loads((Path(__file__).resolve().parent.parent / "badges.json").read_text())
+    repo = os.environ.get("GITHUB_REPOSITORY", f"{USER}/{USER}")
+    for name, url in specs.items():
+        target = out / f"badge-{name}.svg"
+        url = url.format(**values)
+        for attempt in (url, f"https://raw.githubusercontent.com/{repo}/stats/badge-{name}.svg"):
+            try:
+                svg = fetch(attempt)
+                if svg.lstrip().startswith(b"<svg"):
+                    target.write_bytes(svg)
+                    break
+            except Exception as e:  # noqa: BLE001 - try the next source
+                print(f"badge {name}: {attempt}: {e}")
+        else:
+            print(f"badge {name}: no copy, left out")
 
 
 def short(n):
@@ -196,6 +228,7 @@ def main():
         "schemaVersion": 1, "label": "downloads", "message": short(downloads),
         "color": "22D3EE", "cacheSeconds": 3600,
     }, indent=2) + "\n")
+    badges(out, {"downloads": urllib.parse.quote(short(downloads))})
     for theme in THEMES:
         (out / f"languages-{theme}.svg").write_text(languages_svg(theme, langs))
         (out / f"overview-{theme}.svg").write_text(overview_svg(theme, facts))
