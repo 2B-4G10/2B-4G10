@@ -5,6 +5,7 @@
   "website": "https://img.shields.io/badge/re--televip.cc-website-0E7490?logo=googlechrome&logoColor=white&labelColor=0F172A&style=flat-square",
   "telegram": "https://img.shields.io/badge/Telegram-channel-0369A1?logo=telegram&logoColor=white&labelColor=0F172A&style=flat-square",
   "patreon": "https://img.shields.io/badge/Patreon-support-FF424D?logo=patreon&logoColor=white&labelColor=0F172A&style=flat-square",
+  "ko-fi": "https://img.shields.io/badge/Ko--fi-support-72A4F2?logo=kofi&logoColor=white&labelColor=0F172A&style=flat-square",
   "x": "https://img.shields.io/badge/@2B__4G10-follow-334155?logo=x&logoColor=white&labelColor=0F172A&style=flat-square",
   "dream1works": "https://img.shields.io/badge/Dream1Works-organisation-6D28D9?logo=github&logoColor=white&labelColor=0F172A&style=flat-square",
   "re-televip-featured": "https://img.shields.io/badge/%E2%98%85-featured-F5D78E?style=flat-square&labelColor=0F172A",
@@ -40,5 +41,6 @@
   "wordpress": "https://img.shields.io/badge/WordPress-21759B?style=flat-square&logo=wordpress&logoColor=white",
   "macos": "https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white",
   "support-on-patreon": "https://img.shields.io/badge/Support%20on-Patreon-FF424D?style=for-the-badge&logo=patreon&logoColor=white&labelColor=0F172A",
+  "support-on-ko-fi": "https://img.shields.io/badge/Support%20on-Ko--fi-72A4F2?style=for-the-badge&logo=kofi&logoColor=white&labelColor=0F172A",
   "join-the-telegram-channel": "https://img.shields.io/badge/Join-Telegram%20channel-2AABEE?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0F172A"
 }
