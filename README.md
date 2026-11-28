@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://github.com/2B-4G10/2B-4G10/blob/main/README.ar.md">العربية</a> · <b>English</b> · <a href="https://github.com/2B-4G10/2B-4G10/blob/main/README.zh-CN.md">简体中文</a>
+</p>
+
 <div align="center">
 
 <!-- The banner is cut into linked slices so each app icon opens its own page. -->
