@@ -26,9 +26,9 @@ jobs:
       USER_LOGIN: ${{ github.repository_owner }}
       # The Xposed Modules Repo mirror is where most Re: TeleVIP installs come from.
       EXTRA_REPOS: Xposed-Modules-Repo/io.github.re_televip.televip
-      # Re: TeleVIP moved to the Dream1Works organisation, but it is still my project: its downloads,
-      # stars and the project itself count.
-      OWN_REPOS: Dream1Works/Re-TeleVIP
+      # Re: TeleVIP and Telltrace moved to the Dream1Works organisation, but they are still my
+      # projects: their downloads, stars and the projects themselves count.
+      OWN_REPOS: Dream1Works/Re-TeleVIP, Dream1Works/Telltrace
       # Code I didn't write doesn't count towards my languages: YouPlus and LSPatch are forks of
       # other people's projects.
       SKIP_LANGS: YouPlus, LSPatch
