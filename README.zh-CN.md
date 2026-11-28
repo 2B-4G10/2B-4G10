@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- The banner is cut into linked slices so each app icon opens its own page. -->
-<a href="https://github.com/Dream1Works"><img src="assets/banner/top.svg" width="100%" align="top" alt="你好，我是 Faisal AlDossary：Android 模块、隐私工具与逆向工程"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/left.svg" width="72.9167%" align="top" alt=""></a><a href="https://github.com/Dream1Works/Re-TeleVIP"><img src="assets/banner/icon-re-televip.svg" width="5.3333%" align="top" alt="Re: TeleVIP"></a><a href="https://github.com/2B-4G10/NoLockQS"><img src="assets/banner/icon-nolockqs.svg" width="5.3333%" align="top" alt="NoLockQS"></a><a href="https://github.com/2B-4G10/MVT-GUI"><img src="assets/banner/icon-mvt-gui.svg" width="5.3333%" align="top" alt="MVT GUI"></a><a href="https://fmhub.org"><img src="assets/banner/icon-fmhub.svg" width="5.3333%" align="top" alt="FMhub"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/right.svg" width="5.75%" align="top" alt=""></a>
+<a href="https://github.com/Dream1Works"><img src="assets/banner/top.svg" width="100%" align="top" alt="你好，我是 Faisal AlDossary：Android 模块、隐私工具与逆向工程"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/left.svg" width="72.9167%" align="top" alt=""></a><a href="https://github.com/Dream1Works/Re-TeleVIP"><img src="assets/banner/icon-re-televip.svg" width="5.3333%" align="top" alt="Re: TeleVIP"></a><a href="https://github.com/2B-4G10/NoLockQS"><img src="assets/banner/icon-nolockqs.svg" width="5.3333%" align="top" alt="NoLockQS"></a><a href="https://github.com/Dream1Works/Telltrace"><img src="assets/banner/icon-telltrace.svg" width="5.3333%" align="top" alt="Telltrace"></a><a href="https://fmhub.org"><img src="assets/banner/icon-fmhub.svg" width="5.3333%" align="top" alt="FMhub"></a><a href="https://github.com/Dream1Works"><img src="assets/banner/right.svg" width="5.75%" align="top" alt=""></a>
 
 <br>
 
@@ -65,15 +65,15 @@
 </tr>
 <tr>
   <td width="104" align="center" valign="middle">
-    <a href="https://github.com/2B-4G10/MVT-GUI"><img src="assets/icons/mvt-gui.png" width="80" height="80" alt="MVT GUI"></a>
+    <a href="https://github.com/Dream1Works/Telltrace"><img src="assets/icons/telltrace.png" width="80" height="80" alt="Telltrace"></a>
   </td>
   <td valign="middle">
-    <a href="https://github.com/2B-4G10/MVT-GUI"><b>MVT GUI</b></a><br>
+    <a href="https://github.com/Dream1Works/Telltrace"><b>Telltrace</b></a><br>
     <sub>无需使用终端（Terminal），即可检查 iPhone 和 Android 手机上是否有已知间谍软件的痕迹。支持 Mac 和 Windows。</sub><br>
-    <a href="https://github.com/2B-4G10/MVT-GUI/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-mvt-gui-latest-release.svg" alt="最新版本"></a>
-    <a href="https://github.com/2B-4G10/MVT-GUI/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-mvt-gui-downloads.svg" alt="下载量"></a>
-    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-mvt-gui-macos.svg" alt="macOS">
-    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-mvt-gui-windows.svg" alt="Windows">
+    <a href="https://github.com/Dream1Works/Telltrace/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telltrace-latest-release.svg" alt="最新版本"></a>
+    <a href="https://github.com/Dream1Works/Telltrace/releases"><img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telltrace-downloads.svg" alt="下载量"></a>
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telltrace-macos.svg" alt="macOS">
+    <img src="https://raw.githubusercontent.com/2B-4G10/2B-4G10/stats/badge-telltrace-windows.svg" alt="Windows">
   </td>
 </tr>
 <tr>
